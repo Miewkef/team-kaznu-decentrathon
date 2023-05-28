@@ -4,4 +4,4 @@ In the beginning we decided to solve 2nd problem, but we didnt and switched to 3
 We made a **parser**. And separete front to our planned project, you may check if you want.
 
 
-P.S. for parser you must install libraries aiohttp, bs4, fake_useragent, 
+P.S. for parser you must install libraries aiohttp, bs4, fake_useragent, asyncio
