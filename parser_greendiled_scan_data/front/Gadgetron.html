@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>Gadgetron</title>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="header_line">
+        <div class="header_logo">
+          <img src="logo.png" alt="">
+        </div>
+        <div class="btn">
+          <button id="burger" class="button" href="index.html">Sp Name</button>
+          <div id="menu" class="burger_slide disp">
+            <a class="nav_item block" a href="Nodereal.html">Nodereal</a>
+            <a class="nav_item block" a href="Titan.html">Titan</a>
+            <a class="nav_item block" a href="Gadgetron.html">Gadgetron</a>
+            <a class="nav_item block" a href="Volbot.html">Volbot</a>
+            <a class="nav_item block" a href="Thorax.html">Thorax</a>
+            <a class="nav_item block" a href="Neuronet.html">Neuronet</a>
+            <a class="nav_item block" a href="Zenon.html">Zenon</a>
+            <a class="nav_item block" a href="Cogsworth.html">Cogsworth</a>
+            <a class="nav_item block"a href="index.html">Main</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="container">
+      <div class="card">
+        <div class="img_card">
+          <img class="card_img"><!--src="diagrama1.png">-->
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+      </div>
+  </div>
+
+
+  <script src="your_script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+  var ctx = document.getElementById('myChart').getContext('2d');
+  ctx.canvas.parentNode.style.height = '600px';
+  ctx.canvas.parentNode.style.width = '600px';
+  var myChart = new Chart(ctx, {
+  type: 'pie', // Тип диаграммы (в данном случае - круговая)
+  data: {
+    labels: ['Use', 'empty', 'reserve'], // Метки для секторов диаграммы
+    datasets: [{
+      abel: 'Место',
+      data: [2, 4, 16],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.7)',
+        'rgba(54, 162, 235, 0.7)',
+        'rgba(255, 206, 86, 0.7)'
+      ],
+      borderColor: [
+        'rgba(255, 99, 132, 1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)'
+      ],
+       borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true
+    }
+  });
+  </script>
+      
+  <style>
+  body {
+    background: linear-gradient(117.76deg, #1F67F2 4.84%, rgba(6, 38, 99, 0) 95.27%);
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    }
+
+  </style>
+</body>
+</html>
