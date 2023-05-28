@@ -1,6 +1,2 @@
-# Greendield objects statistics
-Greenfield objects statistics(SPstat) is a web monitoring and tracking tool for BNB Greenfield Storage Providers. 
-We tried to create a simple and user friendly interface.
-# How to use
-1. Install libraries **django, aiohttp, lxml, bs4 and fake_useragent** through ```pip install```
-2. 
+# We weren't ready for the hacathon
+In the beginning we decided to solve 2nd problem, but we didnt and switched to 3rd. And we couldnt find an endpoints to parse data for monitoring. Than, we quit.
